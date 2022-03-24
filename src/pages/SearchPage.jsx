@@ -75,23 +75,23 @@ const SearchPage = () => {
 						</div>
 						<div className="search-body flex-1 w-[100%] ml-24 mb-6 max-w-3xl">
 							{true && (
-								<div className="search-result ">
+								<div className="search-result overflow-y-scroll">
 									<p className="result-stats text-sm text-gray-600 my-1">
 										About {data?.searchInformation.formattedTotalResults} results ({data?.searchInformation.formattedSearchTime}
 										seconds) for {term}
 									</p>
 									{data?.items.map((item, i) => (
 										<div className="item-result my-8" key={i}>
-											<div className="option">
+											<div className="option my-2 text-gray-700">
 												<a href={item.link} className="text-sm">
 													{item.displayLink}
 												</a>
 												<MoreVertIcon className="option-icon" />
 											</div>
-											<a href={item.link}>
+											<a href={item.link} className="text-xl text-blue-800">
 												<h2>{item.title}</h2>
 											</a>
-											<p className="my-2">{item.snippet}</p>
+											<p className="my-1 text-gray-800">{item.snippet}</p>
 										</div>
 									))}
 								</div>

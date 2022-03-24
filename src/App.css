@@ -35,7 +35,7 @@
 	@apply flex flex-col fixed top-0 z-50 items-start;
 }
 .search-header {
-	@apply border-b-2 border-gray-200  w-[100%];
+	@apply border-b-2 border-gray-200  w-[100vw];
 }
 .search-header-options-left,
 .search-header-options-right {
@@ -44,10 +44,10 @@
 .search-header-options-right {
 	@apply w-[15%] justify-around;
 }
-.search-header-options-left .option {
-	@apply mr-5 flex justify-center items-center;
+.option {
+	@apply mr-5 flex items-center;
 }
-.search-header-options-left .option .option-icon {
+.option .option-icon {
 	@apply text-base mx-1;
 }
 @tailwind utilities;
