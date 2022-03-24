@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+
+.seach-section {
+	@apply w-screen flex flex-col;
+}
+.search-bar {
+	@apply flex items-center border border-gray-300 rounded-full h-10 w-2/4 py-3 px-5 mt-10 mb-5 mx-auto max-w-xl hover:bg-gray-200 focus-within:bg-gray-200;
+}
+.search-bar SeachIcon {
+	@apply text-gray-300;
+}
+.search-bar input {
+	@apply flex-1 px-5 py-1 border-0 focus:outline-none bg-transparent;
+}
+.search-bar MicIcon {
+	@apply text-gray-600;
+}
+.search-buttons {
+	@apply flex justify-center w-3/5 m-auto;
+}
+.search-buttons button {
+	@apply relative inline-flex items-center justify-center p-0.5 mr-4 text-sm w-1/5  text-gray-700 rounded bg-white outline outline-1 outline-gray-300  hover:shadow-sm hover:bg-gradient-to-b hover:from-white hover:via-gray-100 hover:to-slate-200;
+}
+.search-buttons button span {
+	@apply relative px-4 py-1;
+}
+.search-header .seach-section .search-bar {
+	@apply m-auto ml-[10%];
+}
+.search-header .seach-section {
+	@apply float-left;
+}
+.search-page {
+	@apply flex flex-col fixed top-0 z-50 items-start;
+}
+.search-header {
+	@apply border-b-2 border-gray-200  w-[100%];
+}
+.search-header-options-left,
+.search-header-options-right {
+	@apply flex flex-row ml-24 mb-4 text-sm text-gray-700;
+}
+.search-header-options-right {
+	@apply w-[15%] justify-around;
+}
+.search-header-options-left .option {
+	@apply mr-5 flex justify-center items-center;
+}
+.search-header-options-left .option .option-icon {
+	@apply text-base mx-1;
+}
+@tailwind utilities;
